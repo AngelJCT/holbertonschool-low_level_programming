@@ -1,11 +1,12 @@
-#include <main.h>
+#include "main.h"
+#include <unistd.h>
 /**
  * main - print _putchar
  * Return: Always 0 success
  */
 int main(void)
 {
-	putchar(_putchar);
+	int _putchar(char p)
 
-	return (0);
+		return (write p);
 }
