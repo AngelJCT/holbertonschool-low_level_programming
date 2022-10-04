@@ -8,5 +8,6 @@ int main(void)
 {
 	int _putchar(char p)
 
-		return (write p);
+		putchar(p);
+		return (0);
 }
