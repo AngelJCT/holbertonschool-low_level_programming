@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	int x;
+	int one;
 
-	for (x = 0; x <= 9; x++)
+	for (one = 0; one <= 9; one++)
 	{
-		putchar(x);
+		putchar(one);
 	}
 	putchar('\n');
 	return (0);
