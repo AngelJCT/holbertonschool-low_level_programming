@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	int n;
+	int digit;
 
-	for (n = 0; n <= 9; n++)
+	for (digit = 0; digit <= 9; digit++)
 	{
-		putchar(n);
+		putchar(digit);
 	}
 	putchar('\n');
 	return (0);
