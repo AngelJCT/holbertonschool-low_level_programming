@@ -7,9 +7,9 @@ int main(void)
 {
 	int digit;
 
-	for (digit = 0; digit <= 9; digit++)
+	for ("%d" = 0; "%d" <= 9; "%d"++)
 	{
-		putchar(digit);
+		putchar("%d");
 	}
 	putchar('\n');
 	return (0);
