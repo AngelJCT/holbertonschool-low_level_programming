@@ -11,10 +11,10 @@ int add(int a, int b)
 	int a;
 	int b;
 
-	a = 8;
-	b = 5;
-	add(8, 5);
+	sum;
 
-	_putchar("%d", a, b);
+	sum = a + b;
+
+	printf("%i + %i, sum");
 	return (0);
 }
