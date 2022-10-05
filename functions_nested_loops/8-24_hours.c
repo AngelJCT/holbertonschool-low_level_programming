@@ -10,20 +10,20 @@ void jack_bauer(void)
 	int a;
 	int c;
 
-	for (y = '0'; y <= '2'; y++)
+	for (y = '0'; y <= '0'; y++)
 	{
 		_putchar(y);
 
-		for (z = '0'; z <= '3'; z++)
+		for (z = '0'; z <= '0'; z++)
 
 		_putchar(z);
 	}
 	_putchar(':');
 
-	for (a = '0'; a <= '5'; a++)
+	for (a = '0'; a <= '0'; a++)
 	{
 		_putchar(a);
-		for (c = '0'; c <= '9'; c++)
+		for (c = '0'; c <= '0'; c++)
 
 		_putchar(c);
 	}
