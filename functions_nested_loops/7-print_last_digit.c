@@ -2,7 +2,7 @@
 /**
  * print_last_digit - print the last digit of a number
  * @n: get the last digit
- * Return: Always 0 success
+ * Return: Last digit a
  */
 int print_last_digit(int n)
 {
@@ -15,5 +15,5 @@ int print_last_digit(int n)
 		a = a * (-1);
 	}
 	_putchar('0' + a);
-	return (0);
+	return (a);
 }
