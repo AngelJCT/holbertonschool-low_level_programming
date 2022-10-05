@@ -12,6 +12,6 @@ int add(int a, int b)
 
 	c = a + b;
 
-	_putchar('%i', c);
+	_putchar(c);
 	return (0);
 }
