@@ -24,15 +24,8 @@ void print_to_98(int n)
 	{
 		while (n >= 98)
 		{
-			if (n == 98)
-			{
-				printf("%i", n);
-			}
-			else
-			{
-				printf("%i, ", n);
-				n--;
-			}
+			printf("%i", n);
+			n--;
 		}
 	}
 	_putchar('\n');
