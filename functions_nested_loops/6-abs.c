@@ -7,9 +7,9 @@
 int _abs(int n)
 {
 
-	int abNum = abs(n);
+	_abs(n);
 
-	_putchar("%d", abNum);
+	_putchar('n');
 	_putchar('\n');
 
 	return (0);
