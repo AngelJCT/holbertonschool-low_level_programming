@@ -8,13 +8,10 @@
  */
 int add(int a, int b)
 {
-	int a;
-	int b;
+	int a, b, c;
 
-	sum;
+	c = a + b;
 
-	sum = a + b;
-
-	printf("%i + %i, sum");
+	_putchar(z);
 	return (0);
 }
