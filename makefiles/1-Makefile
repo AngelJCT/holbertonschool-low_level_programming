@@ -1,0 +1,4 @@
+CC := the compiler to be used
+SRC := the .c files
+all: main.c school.c
+	gcc main.c school.c -o school
