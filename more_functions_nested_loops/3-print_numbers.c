@@ -8,7 +8,7 @@ void print_numbers(void)
 {
 	int exe;
 
-	for (exe >= '0'; exe <= '9'; exe++)
+	for (exe = '0'; exe <= '9'; exe++)
 	{
 		_putchar(exe);
 	}
