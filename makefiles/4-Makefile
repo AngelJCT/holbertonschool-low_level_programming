@@ -2,16 +2,15 @@ CC = gcc
 SRC = main.c school.c                                                                                                                           
 OBJ = $(SRC:.c=.o)                                                                                                                              
 NAME = school                                                                                                                                   
-RM = rm -f *~
+RM = rm -f *~ $(NAME)
 CFLAGS = -Wall -Werror -Wextra -pedantic
-all: $(OBJ)                                                                                                                                     
-	        $(CC) $(OBJ) -o $(NAME)                                                                                                                 
-clean:                                                                                                                                          
-	        $(RM) $(NAME)                                                                                                                           
-oclean:                                                                                                                                         
-	        $(RM) $(OBJ) $(NAME)                                                                                                                    
-fclean:                                                                                                                                         
-	        $(RM) $(NAME)
-		$(RM) $(OBJ)                                                                                                         
-re:                                                                                                                                             
-	        $(RM) -f $(CC) $(OBJ) $(NAME) $(CFLAGS)
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+clean:
+	$(RM)
+oclean:
+	$(RM) $(OBJ)
+fclean:
+	$(RM) $(OBJ)
+re:
+	$(RM) -f $(CC) $(OBJ) $(CFLAGS)
