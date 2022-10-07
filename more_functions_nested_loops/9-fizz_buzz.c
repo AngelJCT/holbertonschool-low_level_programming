@@ -13,22 +13,22 @@ int main(void)
 	{
 		if (dig % 3 == 0 && dig % 5 == 0)
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		}
 		else if (dig % 3 == 0)
 		{
-			printf("Fizz");
+			printf("Fizz ");
 		}
 		else if (dig % 5 == 0)
 		{
 			if (dig != 100)
-				printf("Buzz");
+				printf("Buzz ");
 			else
 				printf("Buzz");
 		}
 		else
 		{
-			printf("%i", dig);
+			printf("%i ", dig);
 		}
 	}
 	printf("\n");
