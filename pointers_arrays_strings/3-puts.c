@@ -8,10 +8,10 @@ void _puts(char *str)
 {
 	int a = 0;
 
-	while (*(str + a) != '\0')
+	while (*str != '\0')
 	{
-		_putchar(str[a]);
-		a++;
+		_putchar(a);
+		str++;
 	}
-	_puts(str);
+	_putchar('\n');
 }
