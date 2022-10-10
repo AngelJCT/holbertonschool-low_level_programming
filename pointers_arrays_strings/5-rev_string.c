@@ -6,10 +6,10 @@
  */
 void rev_string(char *s)
 {
-	int len, x;
+	int x, len;
 	char *beg, *nd, temp;
 
-	len = _strlen(s);
+	len = 0;
 	beg = s;
 	nd = s;
 
@@ -22,7 +22,12 @@ void rev_string(char *s)
 		temp = *nd;
 		*nd = *beg;
 		*beg = temp;
+
 		beg++;
 		nd--;
+	}
+	while (*(s + x) != '\0')
+	{
+		x++;
 	}
 }
