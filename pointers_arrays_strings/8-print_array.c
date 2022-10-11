@@ -16,6 +16,7 @@ void print_array(int *a, int n)
 		{
 			printf("\n");
 		}
+	}
 	else
 	{
 		for (j = 0; j < n; ++j)
