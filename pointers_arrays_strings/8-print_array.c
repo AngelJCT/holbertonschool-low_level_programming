@@ -30,7 +30,7 @@ void print_array(int *a, int n)
 			}
 			else if  (j == (n - 1))
 			{
-				printf("\n";
+				printf("\n");
 			}
 		}
 	}
