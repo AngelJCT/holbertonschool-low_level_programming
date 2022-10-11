@@ -9,35 +9,28 @@ void print_array(int *a, int n)
 {
 	int j;
 
-	j = 0;
-	if (j <= n)
+	if (n == 0 || n == (-1))
 	{
-		while (j < n)
+		n = 1;
+		for (j = 0; j < n; ++j)
 		{
-			if (j == n)
-			{
-				printf("%d", *(a + j));
-			}
-			else
-			{
-				printf("%d, ", *(a + j));
-			}
-			a++;
+			printf("\n");
 		}
-	}
 	else
 	{
-		while (n >= j)
+		for (j = 0; j < n; ++j)
 		{
-			if (n == j)
+			printf("%d", *a);
+			++a;
+
+			if (j < (n - 1))
 			{
-				printf("%d", *(a + j));
+				printf(",");
 			}
-			else
+			else if  (j == (n - 1)
 			{
-				printf("%d, ", *(a + j));
+				printf("\n";
 			}
-			a--;
 		}
 	}
 }
