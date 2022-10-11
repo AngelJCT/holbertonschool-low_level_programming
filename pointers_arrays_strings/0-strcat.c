@@ -10,13 +10,20 @@ char *_strcat(char *dest, char *src)
 {
 	int a, b;
 
-	for (a = 0; src[a] != '\0'; a++)
+	a = 0;
+	while (src[a] != '\0')
+	{
+		a++;
+	}
 
-	for (b = 0; dest[b] != '\0'; b++, a++)
+	b = 0;
+	while (dest[b] != '\0')
 	{
 		src[a] = dest[b];
+		a++;
+		b++;
 	}
 	src[a] = '\0';
-	printf("%s", dest);
+	printf("%s", src);
 	return (dest);
 }
