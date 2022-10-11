@@ -27,7 +27,7 @@ void print_array(int *a, int n)
 	}
 	else
 	{
-		while (n >= j)
+		while (n == j)
 		{
 			if (n == j)
 			{
@@ -37,7 +37,6 @@ void print_array(int *a, int n)
 			{
 				printf("%d, ", *(a + j));
 			}
-			j--;
 		}
 	}
 }
