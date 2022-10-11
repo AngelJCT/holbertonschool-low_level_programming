@@ -28,7 +28,7 @@ void print_array(int *a, int n)
 			{
 				printf(",");
 			}
-			else if  (j == (n - 1)
+			else if  (j == (n - 1))
 			{
 				printf("\n";
 			}
