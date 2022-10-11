@@ -25,4 +25,19 @@ void print_array(int *a, int n)
 			j++;
 		}
 	}
+	else
+	{
+		while (n >= j)
+		{
+			if (n == j)
+			{
+				printf("%d", *(a + j));
+			}
+			else
+			{
+				printf("%d, ", *(a + j));
+			}
+			j--;
+		}
+	}
 }
