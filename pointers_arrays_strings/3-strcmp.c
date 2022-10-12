@@ -17,7 +17,7 @@ int _strcmp(char *s1, char *s2)
 			s2++;
 		}
 		else if ((*s1 == '\0' && *s2 != '\0')
-			|| (*s1 != '\0' *s2 == '\0')
+			|| (*s1 != '\0' && *s2 == '\0')
 				|| *s1 != *s2)
 		{
 			c = 1;
@@ -25,7 +25,5 @@ int _strcmp(char *s1, char *s2)
 		}
 	}
 	if (c == 0)
-	{
 		return (0);
-	}
 }
