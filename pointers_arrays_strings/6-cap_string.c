@@ -26,7 +26,7 @@ char *cap_string(char *xy)
 				|| xy[u] == '(' || xy[u] == ')'
 				|| xy[u] == '{' || xy[u] == '}'
 				|| xy[u] == '\v' || xy[u] == '!'
-				|| xy[u] == '?')
+				|| xy[u] == '?' || xy[u] == '\r')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
