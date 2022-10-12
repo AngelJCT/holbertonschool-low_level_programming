@@ -20,13 +20,22 @@ char *cap_string(char *xy)
 			continue;
 		}
 		if (xy[u] == ' ' || xy[u] == ','
-				|| xy[u] == '.' || xy[u] == '\n'
+				|| xy[u] == '.'
 				|| xy[u] == '-' || xy[u] == ';'
 				|| xy[u] == '\t' || xy[u] == '"'
 				|| xy[u] == '(' || xy[u] == ')'
 				|| xy[u] == '{' || xy[u] == '}'
 				|| xy[u] == '\v' || xy[u] == '!'
 				|| xy[u] == '?' || xy[u] == '\r')
+		{
+			++u;
+			if (xy[u] >= 'a' && xy[u] <= 'z')
+			{
+				xy[u] = xy[u] - 32;
+			}
+			continue;
+		}
+		if (xy[u] == '\n')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
