@@ -56,7 +56,15 @@ char *cap_string(char *xy)
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
 			{
-				xy[u] = xy[u] -32;
+				xy[u] = xy[u] - 32;
+			}
+		}
+		if (xy[u] == '-')
+		{
+			++u;
+			if (xy[u] >= 'a' && xy[u] <= 'z')
+			{
+				xy[u] = xy[u] - 32;
 			}
 		}
 	}
