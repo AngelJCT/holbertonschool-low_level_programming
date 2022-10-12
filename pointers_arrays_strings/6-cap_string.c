@@ -22,7 +22,7 @@ char *cap_string(char *xy)
 		if (xy[u] == ' ' || xy[u] == ','
 				|| xy[u] == '.'
 				|| xy[u] == '-'
-				|| xy[u] == '\t'
+				|| xy[u] == '\t')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
