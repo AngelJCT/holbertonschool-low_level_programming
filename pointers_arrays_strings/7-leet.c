@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *leet - switch letters for numbers
+ *leet - change letters for numbers
  *@ch: return the letters changed into numbers
- *Return: letters switched to numbers
+ *Return: letters changed to numbers
  */
 char *leet(char *ch)
 {
