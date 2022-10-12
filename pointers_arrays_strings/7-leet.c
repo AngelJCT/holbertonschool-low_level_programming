@@ -12,7 +12,7 @@ char *leet(char *ch)
 
 	for (a = 0; ch[a] != '\0'; a++)
 	{
-		for (b = '0'; b < 10; b++)
+		for (b = 0; b < 10; b++)
 		{
 			if (ch[a] == let[b])
 			{
