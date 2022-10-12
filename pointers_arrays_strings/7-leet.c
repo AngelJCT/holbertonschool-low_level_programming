@@ -14,9 +14,9 @@ char *leet(char *ch)
 	{
 		for (b = 0; b < 10; b++)
 		{
-			if (ch[1] == let[1])
+			if (ch[a] == let[b])
 			{
-				ch[1] = num[1];
+				ch[a] = num[b];
 			}
 		}
 	}
