@@ -15,4 +15,5 @@ char *string_toupper(char *abc)
 			abc[j] = abc[j] - 32;
 		}
 	}
+	return (abc);
 }
