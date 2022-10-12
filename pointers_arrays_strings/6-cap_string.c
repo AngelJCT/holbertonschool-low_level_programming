@@ -42,7 +42,6 @@ char *cap_string(char *xy)
 			{
 				xy[u] = xy[u] - 32;
 			}
-			continue;
 		}
 	}
 	return (xy);
