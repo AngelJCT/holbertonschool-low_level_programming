@@ -25,5 +25,8 @@ int _strcmp(char *s1, char *s2)
 		}
 	}
 	if (c == 0)
+	{
 		return (0);
+	}
+	return (0);
 }
