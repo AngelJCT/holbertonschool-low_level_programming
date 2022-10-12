@@ -21,7 +21,7 @@ char *cap_string(char *xy)
 		}
 		for (n = 0; n < 13; n++)
 		{
-			if ( xy[u] == comp[n])
+			if (xy[u] == comp[n])
 			{
 				if (xy[u + 1] >= 'a' && xy[u + 1] <= 'z')
 				{
