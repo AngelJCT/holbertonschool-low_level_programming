@@ -34,7 +34,7 @@ char *cap_string(char *xy)
 				xy[u] = xy[u] - 32;
 			}
 		}
-		if (xy[u] == '\n' || xy[u] == '\0')
+		if (xy[u] == '\n')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
