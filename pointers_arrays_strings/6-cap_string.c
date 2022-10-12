@@ -21,7 +21,8 @@ char *cap_string(char *xy)
 		}
 		if (xy[u] == ' ' || xy[u] == ','
 				|| xy[u] == '.' || xy[u] == '\n'
-				|| xy[u] == '-' || xy[u] == ';')
+				|| xy[u] == '-' || xy[u] == ';'
+				|| xy[u] == '\t' || xy[u] == '\v')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
