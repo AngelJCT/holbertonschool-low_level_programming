@@ -22,6 +22,7 @@ int _strcmp(char *s1, char *s2)
 		{
 			c = 1;
 			return (1);
+			break;
 		}
 	}
 	if (c == 0)
