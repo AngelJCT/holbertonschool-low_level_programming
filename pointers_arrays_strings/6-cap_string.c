@@ -17,6 +17,7 @@ char *cap_string(char *xy)
 			{
 				xy[u] = xy[u] - 32;
 			}
+			continue;
 		}
 		if (xy[u] == ' ' || xy[u] == ',' || xy[u] == '.')
 		{
@@ -25,13 +26,7 @@ char *cap_string(char *xy)
 			{
 				xy[u] = xy[u] - 32;
 			}
-		}
-		else
-		{
-			if (xy[u] >= 'A' && xy[u] <= 'Z')
-			{
-				xy[u] = xy[u] + 32;
-			}
+			continue;
 		}
 	}
 	return (xy);
