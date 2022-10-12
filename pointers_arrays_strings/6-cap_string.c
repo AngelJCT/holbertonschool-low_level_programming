@@ -23,10 +23,7 @@ char *cap_string(char *xy)
 				|| xy[u] == '.'
 				|| xy[u] == '-' || xy[u] == ';'
 				|| xy[u] == '\t' || xy[u] == '"'
-				|| xy[u] == '(' || xy[u] == ')'
-				|| xy[u] == '{' || xy[u] == '}'
-				|| xy[u] == '\v' || xy[u] == '!'
-				|| xy[u] == '?' || xy[u] == '\r')
+				|| xy[u] == '!')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
@@ -34,8 +31,7 @@ char *cap_string(char *xy)
 				xy[u] = xy[u] - 32;
 			}
 		}
-		if (xy[u] == '\n' || xy[u] == '!' || xy[u] == ' '
-				|| xy[u] == '-')
+		if (xy[u] == '\n' || xy[u] == '!' || xy[u] == ' ')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
