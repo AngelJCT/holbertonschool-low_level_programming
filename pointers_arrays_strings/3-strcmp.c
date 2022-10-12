@@ -21,11 +21,12 @@ int _strcmp(char *s1, char *s2)
 				|| *s1 != *s2)
 		{
 			c = 1;
+			return (1);
 		}
 	}
 	if (c == 0)
 	{
 		return (0);
 	}
-	return (0);
+	return (c);
 }
