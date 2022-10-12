@@ -22,7 +22,11 @@ char *cap_string(char *xy)
 		if (xy[u] == ' ' || xy[u] == ','
 				|| xy[u] == '.' || xy[u] == '\n'
 				|| xy[u] == '-' || xy[u] == ';'
-				|| xy[u] == '\t' || xy[u] == '\v')
+				|| xy[u] == '\t' || xy[u] == '"'
+				|| xy[u] == '(' || xy[u] == ')'
+				|| xy[u] == '{' || xy[u] == '}'
+				|| xy[u] == '\v' || xy[u] == '!'
+				|| xy[u] == '?')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
