@@ -1,18 +1,24 @@
 #include "main.h"
 /**
- *
- *
- *
+ *leet - switch letters for numbers
+ *@ch: return the letters changed into numbers
+ *Return: letters switched to numbers
  */
 char *leet(char *ch)
 {
-	char lower[5] = {a, e, o, t, l};
-	char upper[5] = {A, E, O, T, L};
-	int num[5] = {4, 3, 0, 7, 1};
+	int a, b;
+	char let[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	char num[] = {4, 3, 0, 7, 1, 4, 3, 0, 7, 1};
 
-	for (lower = 'a'; lower <= 'z'; lower++)
+	for (a = 0; ch[a] != '\0'; a++)
 	{
-		lower = ch[num];
+		for (b = 0; b < 10; b++)
+		{
+			if (ch[1] == let[1])
+			{
+				ch[1] = num[1];
+			}
+		}
 	}
 	return (ch)
 }
