@@ -20,9 +20,8 @@ char *cap_string(char *xy)
 			continue;
 		}
 		if (xy[u] == ' ' || xy[u] == ','
-				|| xy[u] == '.'
-				|| xy[u] == '-'
-				|| xy[u] == '\t')
+				|| xy[u] == '.' || xy[u] == '-'
+				|| xy[u] == '\t' || xy[u] == '!')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
@@ -30,7 +29,7 @@ char *cap_string(char *xy)
 				xy[u] = xy[u] - 32;
 			}
 		}
-		if (xy[u] == '\n' || xy[u] == '!')
+		if (xy[u] == '\n')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
