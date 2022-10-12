@@ -19,7 +19,7 @@ char *cap_string(char *xy)
 			}
 			continue;
 		}
-		if (xy[u] == ' ' || xy[u] == ',' || xy[u] == '.')
+		if (xy[u] == ' ' || xy[u] == ',' || xy[u] == '.' || xy[u] == '\n' || xy[u] == '-')
 		{
 			++u;
 			if (xy[u] >= 'a' && xy[u] <= 'z')
