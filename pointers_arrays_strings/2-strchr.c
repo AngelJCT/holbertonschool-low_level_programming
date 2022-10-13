@@ -7,7 +7,9 @@
  */
 char *_strchr(char *s, char c)
 {
-	static int x = 0;
+	int x;
+
+	x = 0;
 
 	if (s[x])
 	{
@@ -16,9 +18,9 @@ char *_strchr(char *s, char c)
 			return (s);
 			x++;
 		}
-		else
+		if (s[x] == 0)
 		{
-			return (0);
+			return ('\0');
 		}
 	}
 	return (s);
