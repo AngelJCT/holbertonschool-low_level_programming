@@ -10,6 +10,8 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int b;
 
+	b = 0;
+
 	while (b < n)
 	{
 		dest[b] = src[b];
