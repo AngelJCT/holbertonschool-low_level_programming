@@ -22,9 +22,9 @@ char *_strstr(char *haystack, char *needle)
 			}
 		}
 	}
-	else
+	if (needle[n] != haystack[j])
 	{
-		return(0);
+		return (0);
 	}
 	return (0);
 }
