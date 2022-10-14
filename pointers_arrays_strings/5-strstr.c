@@ -23,6 +23,7 @@ char *_strstr(char *haystack, char *needle)
 				}
 			}
 			j++;
+			n++;
 		}
 	}
 	return (0);
