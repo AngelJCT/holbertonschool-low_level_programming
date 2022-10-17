@@ -3,7 +3,7 @@
  *_sqrt_recursion - print the square root of n
  *@n: numbers
  *Return: the square root of numbers
- *
+ *@root: root of n
  */
 int find_square_root(int root, int n);
 int _sqrt_recursion(int n)
