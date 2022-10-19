@@ -8,18 +8,18 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b, sum;
+	int a, sum, x;
 	char error[] = "Error";
 
-	if (argc == 3)
+	sum = 1;
+	for (a = 2; a < argc; a++)
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-		sum = a + b;
-
+		x = strtol(argv[a], '\0', 10);
+		sum = sum + x;
 		printf("%d\n", sum);
 	}
-	else
+
+	if (sum == a)
 	{
 		printf("%s\n", error);
 		return (1);
