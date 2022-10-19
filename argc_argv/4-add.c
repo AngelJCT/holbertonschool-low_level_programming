@@ -6,23 +6,15 @@
  *@argv: array of arguments
  *Return: sum of positive numbers
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-	int a, sum, x;
-	char error[] = "Error";
+	int sum, c;
 
-	sum = 1;
-	for (a = 2; a < argc; a++)
+	sum = 0;
+	for (c = 1; c < argc; c++)
 	{
-		x = strtol(argv[a], '\0', 10);
-		sum = sum + x;
-		printf("%d\n", sum);
+		sum += atoi(argv[c]);
 	}
-
-	if (sum == a)
-	{
-		printf("%s\n", error);
-		return (1);
-	}
+	printf("%d\n", sum);
 	return (0);
 }
