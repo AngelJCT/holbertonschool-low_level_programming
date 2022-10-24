@@ -13,7 +13,7 @@ void print_diagsums(int *a, int size)
 	for (e = 0; e < size; e++)
 	{
 		mus1 += *(a + (e * size + e));
-		mus2 += *(a + (e * size + (size - e - 1)));
+        mus2 += a[(size - 1) + ((size - 1) * e)];
 	}
 	printf("%d, %d\n", mus1, mus2);
 }
