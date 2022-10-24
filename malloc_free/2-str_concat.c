@@ -31,12 +31,10 @@ char *str_concat(char *s1, char *s2)
 	}
 	size = len1 + len2;
 	ptr = malloc((size + 1) * sizeof(char));
-
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-
 	for (i = 0; i < len1; i++)
 	{
 		ptr[i] = s1[i];
