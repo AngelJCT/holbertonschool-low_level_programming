@@ -26,11 +26,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	i = 0;
-	while (i)
+	for (i = 0; i < size; i++)
 	{
 		call[i] = 0;
-		i++;
 	}
 	return (call);
 }
