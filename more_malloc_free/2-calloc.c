@@ -22,6 +22,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 
 	call = malloc(nmemb * size);
+	if (call == NULL)
+	{
+		return (NULL);
+	}
 	i = 0;
 	while (i < size)
 	{
