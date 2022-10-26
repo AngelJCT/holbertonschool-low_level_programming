@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	call = malloc(nmemb * size);
+	call = malloc(nmemb * sizeof(int));
 	if (call == NULL)
 	{
 		return (NULL);
@@ -32,6 +32,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		call[i] = 0;
 		i++;
 	}
-	call[i] = '\0';
 	return (call);
 }
