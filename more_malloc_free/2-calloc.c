@@ -11,6 +11,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *call;
 	unsigned int i;
+	char *ccall;
 
 	if (nmemb == 0)
 	{
@@ -21,14 +22,30 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
+	if (size == sizeof(char))
+	{
+		ccall = malloc(nmemb * size);
+		if (ccall == NULL)
+		{
+			return (NULL);
+		}
+		for (i = 0; i < nmemb; i++)
+		{
+			ccall[i] = '0';
+		}
+		return (ccall);
+	}
+	else
+	{
 	call = malloc(nmemb * sizeof(int));
 	if (call == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size; i++)
+	for (i = 0; i < nmemb; i++)
 	{
 		call[i] = 0;
+	}
 	}
 	return (call);
 }
