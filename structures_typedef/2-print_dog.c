@@ -6,7 +6,7 @@
  */
 void print_dog(struct dog *d)
 {
-	if (d->name == NULL)
+	if (d->name == nil)
 	{
 		printf("Name: (nil)");
 	}
