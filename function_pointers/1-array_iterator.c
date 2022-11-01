@@ -9,14 +9,25 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int i;
+	unsigned int long i;
 
-	void (*fparr)(int);
-
-	fparr = action;
-
-	for (i = 0; i < size; i++)
+	if (array == NULL)
 	{
-		(*fparr)(array[i]);
+		return;
+	}
+	if (action == NULL)
+	{
+		return;
+	}
+	else
+	{
+		void (*fparr)(int);
+
+		fparr = action;
+
+		for (i = 0; i < size; i++)
+		{
+			(*fparr)(array[i]);
+		}
 	}
 }
