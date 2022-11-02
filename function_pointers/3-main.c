@@ -23,16 +23,16 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	p = (argv[2]);
 
+	if ((*p == '/' && b == 0) || (*p == '%' && b == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	if (*p == '+' || *p == '-' || *p == '*' || *p == '/' || *p == '%')
 	{
 		c = get_op_func(p);
 		x = c(a, b);
 		printf("%d\n", x);
-	}
-	if ((*p == '/' && b == 0) || (*p == '%' && b == 0))
-	{
-		printf("Error\n");
-		exit(100);
 	}
 	else
 	{
