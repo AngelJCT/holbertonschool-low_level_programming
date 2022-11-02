@@ -3,9 +3,9 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
- *
- *
- *
+ *print_strings-print a number of strings
+ *@separator: pointer to comma and space
+ *@n: number of strings
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
