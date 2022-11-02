@@ -39,5 +39,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	return (x);
+	return (0);
 }
