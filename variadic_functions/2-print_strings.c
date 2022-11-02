@@ -25,10 +25,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			printf("%s", separator);
 		}
-		if (str[4] == '\0')
-		{
-			printf("(nil)");
-		}
 	}
 	printf("\n");
 	va_end(ptr);
