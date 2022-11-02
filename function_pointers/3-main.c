@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		x = c(a, b);
 		printf("%d\n", x);
 	}
-	if (p == NULL)
+	else
 	{
 		printf("Error\n");
 		exit(99);
