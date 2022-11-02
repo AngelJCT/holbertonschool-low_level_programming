@@ -18,11 +18,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (argv[3] == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
@@ -33,6 +28,11 @@ int main(int argc, char *argv[])
 		c = get_op_func(p);
 		x = c(a, b);
 		printf("%d\n", x);
+	}
+	if ((*p == '/' && b == 0) || (*p == '%' && b == 0))
+	{
+		printf("Error\n");
+		exit(100);
 	}
 	else
 	{
