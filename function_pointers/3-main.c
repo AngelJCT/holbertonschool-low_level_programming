@@ -28,15 +28,15 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	if (*p == '+' || *p == '-' || *p == '*' || *p == '/' || *p == '%')
-	{
-		c = get_op_func(p);
-		x = c(a, b);
-	}
-	else
+	if (get_op_func(p) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
+	}
+	else
+	{
+		c = get_op_func(p);
+		x = c(a, b);
 	}
 	printf("%d\n", x);
 	return (0);
