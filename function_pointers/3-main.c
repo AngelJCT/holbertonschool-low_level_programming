@@ -32,12 +32,12 @@ int main(int argc, char *argv[])
 	{
 		c = get_op_func(p);
 		x = c(a, b);
-		printf("%d\n", x);
 	}
 	else
 	{
 		printf("Error\n");
 		exit(99);
 	}
+	printf("%d\n", x);
 	return (0);
 }
