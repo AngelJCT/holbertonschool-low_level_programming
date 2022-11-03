@@ -41,8 +41,8 @@ void print_all(const char * const format, ...)
 				continue;
 		}
 		if (i != j - 1)
-			(printf(", ");
-			i++;
+			printf(", ");
+		i++;
 	}
 	printf("\n");
 	va_end(p);
