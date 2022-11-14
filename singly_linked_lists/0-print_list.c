@@ -3,7 +3,6 @@
 /**
  *print_list-function to print a linked list
  *@h: pointer to head node
- *
  */
 size_t print_list(const list_t *h)
 {
