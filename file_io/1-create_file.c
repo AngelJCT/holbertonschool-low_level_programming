@@ -8,15 +8,14 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fileopen, filewrite;
-	size_t len = strlen(text_content);
+	int fileopen, filewrite, len = strlen(text_content);
 
 	if (filename == NULL)
 	{
 		return (-1);
 	}
 
-	fileopen = open(filename, O_CREAT | O_RDWR | O_TRUNC | 0600);
+	fileopen = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	filewrite = write(fileopen, text_content, len);
 
 	if (fileopen == -1 || filewrite == -1)
