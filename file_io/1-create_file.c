@@ -16,22 +16,14 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	text_content = malloc(sizeof(char));
-	if (text_content == NULL)
-	{
-		return (0);
-	}
-
-	fileopen = open(filename, O_CREAT | O_WRONLY);
+	fileopen = open(filename, O_CREAT | O_RDWR | O_TRUNC | 0600);
 	filewrite = write(fileopen, text_content, len);
 
 	if (fileopen == -1 || filewrite == -1)
 	{
-		free(text_content);
 		return (-1);
 	}
 
-	free(text_content);
 	close(fileopen);
 	return (1);
 }
