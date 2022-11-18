@@ -30,7 +30,17 @@ int main(int argc, char *argv[])
 	}
 	while ((ch = read(fd, buffer, 1024)) != 0)
 	{
-		write(fd2, buffer, ch);
+		if (ch == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
+		filewrite = write(fd2, buffer, ch);
+		if (filewrite == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
 	}
 	close1 = close(fd);
 	close2 = close(fd2);
