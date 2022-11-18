@@ -24,7 +24,7 @@ void cl_file(int fd)
  */
 int main(int argc, char *argv[])
 {
-	int fd1, fd2, ch, close1, close2, filewrite;
+	int fd1, fd2, ch, filewrite;
 	char *buffer[1024];
 
 	if (argc != 3)
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	fd2 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
-	if (fd == -1 || argv[2] == NULL)
+	if (fd2 == -1 || argv[2] == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
