@@ -8,8 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int fd, fd2, ch;
-	char buffer[1024];
+	int fd, fd2, ch, close1, close2;
+	char *buffer[1024];
 
 	if (argc != 3)
 	{
@@ -19,25 +19,29 @@ int main(int argc, char *argv[])
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file fd\n");
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	fd2 = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to fd2\n");
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
 	while ((ch = read(fd, buffer, 1024)) != 0)
 	{
 		write(fd2, buffer, ch);
 	}
-
-	close(fd);
-	close(fd2);
-	if (close(fd) == -1 || close(fd2) == -1)
+	close1 = close(fd);
+	close2 = close(fd2);
+	if (close1 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd -1\n");
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", close1);
+		exit(100);
+	}
+	else if (close2 == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", close2);
 		exit(100);
 	}
 	return (0);
