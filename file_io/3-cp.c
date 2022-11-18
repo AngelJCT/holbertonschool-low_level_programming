@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to fd2\n");
 		exit(99);
 	}
-	while ((ch = read(fd, buffer, 1024)))
+	while ((ch = read(fd, buffer, 1024)) != 0)
 	{
 		write(fd2, buffer, ch);
 	}
