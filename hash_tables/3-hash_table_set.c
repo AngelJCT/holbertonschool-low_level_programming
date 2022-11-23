@@ -34,21 +34,3 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		strcpy(ht->array[index]->value, value);
 	return (1);
 }
-#include "hash_tables.h"
-/**
-*handling_collision-function to handle collision
-*@ht: pointer to hash table
-*@index: index
-*@newnode: new node to be inserted
-*/
-void handling_collision(hash_table_t *ht, unsigned long int index, const char *key)
-{
-	hash_node_t *head = ht->array[index];
-	
-	if (head == NULL)
-	{
-		head = malloc(sizeof(hash_node_t));
-		head->key = (char *) key;
-		ht->array[index] = head;
-	}
-}
