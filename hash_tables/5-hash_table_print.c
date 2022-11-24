@@ -5,11 +5,12 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
-	long unsigned int i;
-	long unsigned int lastIndex;
+	unsigned long int i;
+	unsigned long int lastIndex;
 
 	if (ht == NULL)
 	{
+		return;
 	}
 
 	lastIndex = ht->size - 1;
