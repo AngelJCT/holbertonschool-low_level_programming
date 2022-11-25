@@ -5,7 +5,17 @@
 ### List of directories:
 ***argc_argv***
 
+***bit_manipulation***
+
+***doubly_linked_lists***
+
+***file_io***
+
+***function_pointers***
+
 ***functions_nested_loops***
+
+***hash_tables***
 
 ***hello_world***
 
@@ -17,12 +27,20 @@
 
 ***more_malloc_free***
 
+***more_singly_linked_lists***
+
 ***pointers_arrays_strings***
 
 ***preprocessor***
 
 ***recursion***
 
+***singly_linked_lists
+
 ***static_libraries***
 
+***structures_typedef***
+
 ***variables_if_else_while***
+
+***variadic_functions***
