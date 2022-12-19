@@ -9,20 +9,17 @@ int main(void)
 
 	for (first = '0'; first <= '9'; first++)
 	{
-		for (second = first + 1; second <= '9'; second++)
+		for (second = '0'; second <= '9'; second++)
 		{
-			putchar(first);
-			putchar(second);
-			putchar(' ');
-			for (third = second + 1; third <= '9'; third++)
+			for (third = '0'; third <= '9'; third++)
 			{
 				for (fourth = third + 1; fourth <= '9'; fourth++)
 				{
+					putchar(first);
+					putchar(second);
+					putchar(' ');
 					putchar(third);
 					putchar(fourth);
-					if (first == '9' && second == '8' && third == '9' && fourth == '9')
-						continue;
-
 					putchar(',');
 					putchar(' ');
 				}
