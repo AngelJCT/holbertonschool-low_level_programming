@@ -5,25 +5,22 @@
  */
 int main(void)
 {
-	int first, second, third, fourth;
+	int first, second;
 
-	for (first = '0'; first <= '9'; first++)
+	for (first = 0; first <= 98; first++)
 	{
-		for (second = '0'; second <= '9'; second++)
+		for (second = first + 1; second <= 99; second++)
 		{
-			for (third = '0'; third <= '9'; third++)
-			{
-				for (fourth = third + 1; fourth <= '9'; fourth++)
-				{
-					putchar(first);
-					putchar(second);
+					putchar((first / 10) + '0');
+					putchar((first % 10) + '0');
 					putchar(' ');
-					putchar(third);
-					putchar(fourth);
+					putchar((second / 10) + '0');
+					putchar((second % 10) + '0');
+					if (first == 98 && second == 99)
+						continue;
+
 					putchar(',');
 					putchar(' ');
-				}
-			}
 		}
 	}
 	putchar('\n');
